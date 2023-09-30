@@ -61,52 +61,46 @@
 
 //     break;
 
-//   default: 
+//   default:
 //   result = "Помилка";
 //     break;
 // }
 //  console.log(result)
-
 
 //TODO: 4 ===================================
 // скористаємося циклом while та виведіть у консоль числа від 0 до 50
 
 // let i = 0;
 
-// while (i < 50) { 
+// while (i < 50) {
 
 //     console.log (i)
 
 //     i += 1;
 // }
 
-
-
 //TODO: 5 ===================================
 //Напишіть цикл, який виводить у консоль
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
-const min = 5;
+// const min = 5;
 
-const max = 50;
+// const max = 50;
 
-let total = 0;
+// let total = 0;
 
+// for (let index = max ; index >= min ; index -= 1) {
 
+//     console.log(index);
 
-for (let index = max ; index >= min ; index -= 1) {
-
-    console.log(index);
-
-  if (index % 2 !== 0) {
-    continue
-  } 
-  console.log("Парні:",index);
-    total+=index;
-}
-console.log("Сума усіх парних:", total);
-
+//   if (index % 2 !== 0) {
+//     continue
+//   }
+//   console.log("Парні:",index);
+//     total+=index;
+// }
+// console.log("Сума усіх парних:", total);
 
 //TODO: 6 ===================================
 // Напишіть цикл, який пропонує ввести
@@ -117,9 +111,8 @@ console.log("Сума усіх парних:", total);
 // введе число більше 100, або натисне кнопку
 // скасування в prompt
 
-
 // const input = prompt("Ведіть число більше 100")
- 
+
 // let number  ;
 
 // do {
@@ -127,3 +120,50 @@ console.log("Сума усіх парних:", total);
 // } while (number < 100);
 
 // alert(number);
+
+// TODO: 7 ===================================
+// Написати ф-цію, яка створює масив із зазначеною довжиною та наповнює його переданим значенням
+// приклад: ф-ція fillArray(3, 'a') повинна повертати масив ['a', 'a', 'a']
+
+// function fillArray(count, symbol) {
+//     let array = [];
+//     for (let i = 0; i < count; i+=1) {
+//         array.push(symbol);
+//     }
+//     return array;
+// }
+
+// console.log(fillArray(10, 'a'));
+
+//TODO: 8 ===================================
+// Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
+// undefined, null, false, '', 0, NaN
+
+// const array = [
+//   1,
+//   0,
+//   54,
+//   "doc",
+//   null,
+//   "jpg",
+//   undefined,
+//   "",
+//   "png",
+//   "exe",
+//   false,
+//   "mp4",
+//   NaN,
+//   "hbs",
+// ];
+
+// function clearArray(array) {
+//     let newArray = [];
+//     for (const item of array) {
+//         if (item) {
+//             newArray.push(item);
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(clearArray(array));
