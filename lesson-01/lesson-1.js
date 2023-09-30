@@ -167,3 +167,51 @@
 // }
 
 // console.log(clearArray(array));
+// Перевірити два масиву і дізнатися, чи вони рівні
+
+// Перевірити два масиву і дізнатися, чи вони рівні
+// const arr1 = [1, 4, 6, "color", 324, 232, "list", 11, 9, "dream", 34, 0, -30];
+// const arr2 = [6, "dream", -30, 11, 9, 1, 324, 34, "color", 4, 232, 0, "list"];
+
+// const arr3 = [4, 232, 6, -30, "color", 324, "list", 1, 11, 9, "dream", 34, 0];
+// const arr4 = ["color", 6, -30, 11, 9, 1, "dream", 324, 34, 4, 232, 0, "list"];
+
+// const arr5 = [1, 4, 6, "color", "list", 11, 9, "dream", 34, 0, -30, "lesson"];
+// const arr6 = [6, 324, "dream", -30, 9, 8, 34, "color", 4, 232, 0, "list", 11];
+
+// const arr7 = [1, 4, 6, "color", 324, 232, "list", 11, 9, "dream", 34, 0, -30];
+// const arr8 = [6, "dream", -30, 10, 9, 1, 324, 34, "color", 4, 232, 0, "list"];
+
+// const arr9 = [1, 2, 4, 5];
+// const arr10 = [1, 2, 3];
+// function compareArrays(array1, array2) {
+//   if (array1.lenght !== array2.lenght) return false;
+
+//   for (const elem of array1) {
+//     if (!array2.includes(elem)) return false;
+//   }
+//   return true;
+// }
+
+// console.log(compareArrays(arr7, arr8));
+
+//TODO: 10 ===================================
+//Напиши функцію findSmallerNumber(numbers)
+//яка шукає найменше число в масиві.
+//Додай перевірку що функція отримує масив
+// const numbers = [2, 5, 35, 1, 12, 24, 7, 80, 3];
+
+// function findSmallerNumber(array) {
+//   if (!Array.isArray(array)) {
+//     return "aргументи повинні бути масивом";
+//   }
+//   let min = array[0];
+//   for (const elem of array) {
+//     if (elem < min) {
+//       min = elem;
+//     }
+//   }
+//   return min;
+// }
+
+// console.log(findSmallerNumber(14));
