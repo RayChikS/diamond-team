@@ -217,3 +217,23 @@
 // console.log(findSmallerNumber(14));
 //
 //
+//TODO:  ===================================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+// console.log(calculateAverage(10, 10, 20, 200, true)); // 60
+
+// function calculateAverage() {
+//   let sum = 0;
+//   let count = 0;
+//   for (const arg of arguments) {
+//     if (typeof arg !== "number") {
+//       continue;
+//     }
+//     sum += arg;
+//     count += 1;
+//   }
+//   return sum / count;
+// }
