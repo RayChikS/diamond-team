@@ -167,6 +167,20 @@
 //TODO:=========task-8==============
 // Потрібно перебрати об'єкти та вивести ім'я кращого співробітника
 
+// function findBestEmployee(obj) {
+// 	let bestEmployee = "";
+// 	let bestTask = 0;
+
+// 	for (const [employee, task] of Object.entries(obj)) {
+// 		if (task > bestTask) {
+// 			bestEmployee = employee;
+// 			bestTask = task;
+// 		}
+		
+// 	}
+// 	return bestEmployee;
+// }
+
 // console.log(
 //   findBestEmployee({
 //     ann: 29,
@@ -201,15 +215,40 @@
 // повинна повернути null. Також необхідно написати 2 різні колбеки. При використанні першого колбеку має
 // повертатись перше парне число. При використанні другого - має повертатись перше слово у масиві, що починається з літери
 // "O" у будь - якому реєстрі.
+//! Зауважте, що використання методу forEach не дозволяє прямо вийти з циклу після знаходження першого підходящого елемента.
+//Тому ми використовуємо додаткову змінну result, щоб зберегти перший підходящий елемент та перевіряти, чи він вже був знайдений.forEach нічого не повертає, а просто перебирає масив!
+
+
 
 // const numbers = [2, 3, 5, 7, 9, 20];
 // const words = ['apple', 'banana', 'orange', 'pear'];
 
-//! Зауважте, що використання методу forEach не дозволяє прямо вийти з циклу після знаходження першого підходящого елемента. Тому ми використовуємо додаткову змінну result, щоб зберегти перший підходящий елемент та перевіряти, чи він вже був знайдений. forEach нічого не повертає, а просто перебирає масив!
+
+// function findElement(arr, callback) {
+	
+// 	let result = null;
+
+// 	arr.forEach(element => {
+// 		if (callback(element) && result === null) {
+// 			result = element;
+// 		}
+// 	});
+
+// 	return result;
+// }
 
 // Перший колбек: перше парне число
+// function isEven(number) {
+// 	if (number % 2 === 0) {
+// 		return true;
+// 	}
+// 	return false;
+// }
 
-// Другий колбек: перше слово, що починається з літери "O" у будь-якому регістрі
+// // Другий колбек: перше слово, що починається з літери "O" у будь-якому регістрі
+// function startsWithO(word) {
+// 	return word.toLowerCase().startsWith("o");
+// }
 
 // const res1 = findElement(numbers, isEven);
 // console.log(res1);
@@ -217,13 +256,24 @@
 // const res2 = findElement(words, startsWithO);
 // console.log(res2);
 
+
+
+
 //!array methods
 //TODO:=========task-02=================
 // Дано масив чисел [1, 2, 3, 4, 5]. Створіть новий масив, що містить квадрати кожного елементу вхідного масиву. Очікуваний результат: [1, 4, 9, 16, 25].
 
+
 // const numbers = [1, 2, 3, 4, 5];
 
+// function getNewArray(arr) {
+// 	return arr.map(elem => elem * elem)
+// }
+
 // console.log(getNewArray(numbers));
+
+
+
 
 //TODO:=========task-03=================
 // Дано масив об'єктів {id: 1, values: [1, 2, 3]}, {id: 2, values: [4, 5, 6]}, {id: 3, values: [7, 8, 9]}. Створіть новий масив, що містить всі значення з масивів values кожного об'єкту, збережених в одному масиві. Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
@@ -233,6 +283,14 @@
 //   { id: 2, values: [4, 5, 6] },
 //   { id: 3, values: [7, 8, 9] },
 // ];
+
+
+// // function flatArray(arr) {
+// // 	return arr.flatMap(({ values }) => values)
+// // }
+
+// const flatArray = (arr) => arr.flatMap(({ values }) => values);
+
 
 // const res = flatArray(data);
 // console.log(res);
@@ -246,13 +304,23 @@
 //   { name: 'Bob', age: 19 },
 // ];
 
+
+// // function checkAge(arr) {
+// // 	return arr.some(elem => elem.age < 20)
+// // }
+
+// const checkAge = (arr) => arr.some(({ age }) => age < 20);
+
+
 // const res = checkAge(people);
 // console.log(res);
 
 //TODO:=========task-05=================
 //  Дано масив чисел [2, 4, 6, 8, 10]. Перевірте, чи є кожен елемент масиву парним. Очікуваний результат: true.
 
-// const numbers = [2, 4, 6, 8, 10];
+// const numbers = [2, 4, 3, 8, 10];
+
+// const checkEvenArray = (arr) => arr.every((number) => number % 2 === 0)
 
 // const res = checkEvenArray(numbers);
 // console.log(res);
