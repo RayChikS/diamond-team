@@ -9,11 +9,20 @@
 // ключ:значення використовуючи Object.keys() і for...of
 
 // const user = {
-//   name: 'John',
+//   name: "John",
 //   age: 30,
-//   hobby: 'reading',
+//   hobby: "reading",
 //   premium: true,
 // };
+
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// const keysArray = Object.keys(user);
+// for (const key of keysArray) {
+//   console.log(`${key} : ${user[key]}`);
+// }
 
 // Додати поле mood зі значенням 'happy'
 
@@ -26,7 +35,20 @@
 //TODO:============task-2==============================================
 // Створіть об'єкт "прямокутник" з властивостями "довжина" та "ширина". Напишіть метод "calculateArea", який буде обчислювати площу прямокутника на основі його довжини та ширини.
 
+// const square = {
+//   height: 200,
+//   weight: 300,
+//   calculateArea() {
+//     return this.height * this.weight;
+//   },
+// };
+
+// const square2 = Object.create(square);
+// square2.height = 500;
+// square2.weight = 500;
+// console.log(square2);
 // console.log(square.calculateArea());
+// console.log(square2.calculateArea());
 
 //TODO:============task-3==============================================
 // Створіть об'єкт "магазин" зі списком товарів. Напишіть метод "hasProduct", який буде перевіряти, чи є певний товар в наявності на складі магазину.
