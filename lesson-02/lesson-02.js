@@ -101,7 +101,7 @@
 // for (const value of valueArray) {
 
 //     sum += value
-    
+
 // }
 
 // console.log(sum);
@@ -176,7 +176,7 @@
 // 			bestEmployee = employee;
 // 			bestTask = task;
 // 		}
-		
+
 // 	}
 // 	return bestEmployee;
 // }
@@ -225,7 +225,7 @@
 
 
 // function findElement(arr, callback) {
-	
+
 // 	let result = null;
 
 // 	arr.forEach(element => {
@@ -330,6 +330,11 @@
 
 // const numbers = [2, 1, 6, 8, 9, 10, 12];
 
+// function oddNumberInArray(array) {
+//     return array.find(number => number % 2 !== 0)
+
+// }
+
 // console.log("numbers: ", numbers);
 // console.log("oddNumber: ", oddNumberInArray(numbers));
 
@@ -337,6 +342,10 @@
 // Відсортуйте масив чисел [4, 2, 5, 1, 3] у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
 
 // const numbersArray = [4, 2, 5, 1, 3];
+// function sortedArray(array) {
+//     return [...array].sort((a, b) => a - b);
+
+// }
 
 // const res = sortedArray(numbersArray);
 // console.log(res);
@@ -346,8 +355,13 @@
 
 // const stringArray = ["banana", "orange", "apple", "pear"];
 
-// const res = sortedArray(stringArray);
-// console.log(res);
+//function sortedArray(array) {
+//  return [...array].sort((a, b) => a.localeCompare(b));
+
+//}
+
+//const res = sortedArray(stringArray);
+//console.log(res);
 
 //TODO:=========task-09=================
 // Дано масив об'єктів {name: "John", age: 27}, {name: "Jane", age: 31}, {name: "Bob", age: 19}. Створіть новий масив, що містить тільки об'єкти, в яких вік більше 20 років. Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
