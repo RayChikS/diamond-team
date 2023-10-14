@@ -94,10 +94,38 @@
 //     Ajax: 1470,
 // };
 
+// let sum = 0;
+
+// const valueArray = Object.values (salaries) ;
+
+// for (const value of valueArray) {
+
+//     sum += value
+    
+// }
+
+// console.log(sum);
+
+
+
+
 //TODO:==========task-6=============
 // Напишіть функцію updateObject, яка приймає об'єкт та повертає
 // новий об'єкт без зазначених параметрів
 // Очікуваний результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
+
+
+// function updateObject(obj, ...removeKeys) {
+
+// const newObj = {...obj};
+
+// for (const key of removeKeys) {
+
+//     delete newObj[key];
+// }
+//   return newObj;
+// }
+
 
 // console.log(updateObject({ a: 1, b: 2, c: 3 }, 'b', 'a')); // {c: 3}
 
@@ -111,6 +139,21 @@
 //     height: 300,
 //     title: 'My menu',
 // };
+
+// function multiplyNumeric(obj) {
+
+//     for (const key in obj) {
+
+//          if (obj.hasOwnProperty(key)) {
+
+//             if (typeof obj[key] === "number" ) {
+
+//                 obj[key] *= 2;
+//             }
+//          }
+//     }
+//     return obj;
+// }
 
 // console.log(multiplyNumeric(menu));
 
