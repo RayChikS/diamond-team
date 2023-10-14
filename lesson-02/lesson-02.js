@@ -101,19 +101,15 @@
 // for (const value of valueArray) {
 
 //     sum += value
-    
+
 // }
 
 // console.log(sum);
-
-
-
 
 //TODO:==========task-6=============
 // Напишіть функцію updateObject, яка приймає об'єкт та повертає
 // новий об'єкт без зазначених параметрів
 // Очікуваний результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
-
 
 // function updateObject(obj, ...removeKeys) {
 
@@ -125,7 +121,6 @@
 // }
 //   return newObj;
 // }
-
 
 // console.log(updateObject({ a: 1, b: 2, c: 3 }, 'b', 'a')); // {c: 3}
 
@@ -176,7 +171,7 @@
 // 			bestEmployee = employee;
 // 			bestTask = task;
 // 		}
-		
+
 // 	}
 // 	return bestEmployee;
 // }
@@ -218,14 +213,11 @@
 //! Зауважте, що використання методу forEach не дозволяє прямо вийти з циклу після знаходження першого підходящого елемента.
 //Тому ми використовуємо додаткову змінну result, щоб зберегти перший підходящий елемент та перевіряти, чи він вже був знайдений.forEach нічого не повертає, а просто перебирає масив!
 
-
-
 // const numbers = [2, 3, 5, 7, 9, 20];
 // const words = ['apple', 'banana', 'orange', 'pear'];
 
-
 // function findElement(arr, callback) {
-	
+
 // 	let result = null;
 
 // 	arr.forEach(element => {
@@ -256,13 +248,9 @@
 // const res2 = findElement(words, startsWithO);
 // console.log(res2);
 
-
-
-
 //!array methods
 //TODO:=========task-02=================
 // Дано масив чисел [1, 2, 3, 4, 5]. Створіть новий масив, що містить квадрати кожного елементу вхідного масиву. Очікуваний результат: [1, 4, 9, 16, 25].
-
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -271,9 +259,6 @@
 // }
 
 // console.log(getNewArray(numbers));
-
-
-
 
 //TODO:=========task-03=================
 // Дано масив об'єктів {id: 1, values: [1, 2, 3]}, {id: 2, values: [4, 5, 6]}, {id: 3, values: [7, 8, 9]}. Створіть новий масив, що містить всі значення з масивів values кожного об'єкту, збережених в одному масиві. Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
@@ -284,13 +269,11 @@
 //   { id: 3, values: [7, 8, 9] },
 // ];
 
-
 // // function flatArray(arr) {
 // // 	return arr.flatMap(({ values }) => values)
 // // }
 
 // const flatArray = (arr) => arr.flatMap(({ values }) => values);
-
 
 // const res = flatArray(data);
 // console.log(res);
@@ -304,13 +287,11 @@
 //   { name: 'Bob', age: 19 },
 // ];
 
-
 // // function checkAge(arr) {
 // // 	return arr.some(elem => elem.age < 20)
 // // }
 
 // const checkAge = (arr) => arr.some(({ age }) => age < 20);
-
 
 // const res = checkAge(people);
 // console.log(res);
@@ -358,6 +339,10 @@
 //   { name: "Bob", age: 19 },
 // ];
 
+// function getAge(arr) {
+//   return arr.filter((item) => item.age > 20);
+// }
+
 // const res = getAge(user);
 // console.log("object :>> ", res);
 
@@ -366,6 +351,10 @@
 
 // const numbers = [1, 2, 3, 4, 5];
 
+// function sum(arr) {
+//   return arr.reduce((acc, number) => acc + number, 0);
+// }
+
 // const res = sum(numbers);
 // console.log(res);
 
@@ -373,6 +362,10 @@
 // У вас є масив чисел, і вам потрібно знайти середнє значення цих чисел. Напишіть функцію, яка приймає масив чисел і повертає середнє значення.
 
 // const arr = [1, 2, 3, 4, 5];
+
+// function averageValue(array) {
+//   return array.reduce((acc, number, _, arr) => acc + number / arr.length, 0);
+// }
 
 // const res = averageValue(arr);
 // console.log(res);
