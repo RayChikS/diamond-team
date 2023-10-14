@@ -369,3 +369,5 @@
 
 // const res = averageValue(arr);
 // console.log(res);
+
+k;
