@@ -2,18 +2,27 @@
 // Створити об'єкт, який представляє користувача. У об'єкті повинні бути наступні поля: ім'я, прізвище, вік, email та метод, який виводить повну інформацію про користувача.
 
 const user = {
-  firstName: "Sergiy", 
+  firstName: "Sergiy",
   lastName: "Gusar",
   age: 41,
-  email: "qwer@gmail.com", 
+  email: "qwer@gmail.com",
 
 
   info() {
-   console.log(this)
+    return this.firstName;
   }
 
 }
-console.log(this)
+
+// user.info();
+// console.log(user.info());
+
+// const employee = Object.create(user);
+// employee.firstName = 'Vlad';
+// employee.info();
+
+// console.log(employee.info());
+
 //TODO:=========task-02=================
 // Для обьекта "user", написати метод для зміни ім'я або прізвища(змінити можна лише якесь з цих полів, змінювати або додавати нові потрібно заборонити) з перевіркою на валідність даних(Перша літера має бути у верхньому реєстрі, довжина слова не менше 3 літер)
 
