@@ -1,6 +1,19 @@
 //TODO:=========task-01=================
 // Створити об'єкт, який представляє користувача. У об'єкті повинні бути наступні поля: ім'я, прізвище, вік, email та метод, який виводить повну інформацію про користувача.
 
+const user = {
+  firstName: "Sergiy", 
+  lastName: "Gusar",
+  age: 41,
+  email: "qwer@gmail.com", 
+
+
+  info() {
+   console.log(this)
+  }
+
+}
+console.log(this)
 //TODO:=========task-02=================
 // Для обьекта "user", написати метод для зміни ім'я або прізвища(змінити можна лише якесь з цих полів, змінювати або додавати нові потрібно заборонити) з перевіркою на валідність даних(Перша літера має бути у верхньому реєстрі, довжина слова не менше 3 літер)
 
@@ -53,19 +66,19 @@
 //TODO:=========task-06=================
 // Виправте помилки, щоб код працював
 
-const product = {
-  price: 5000,
+// const product = {
+//   price: 5000,
 
-  showPrice() {
-    console.log(this.price);
-  },
-};
+//   showPrice() {
+//     console.log(this.price);
+//   },
+// };
 
-function callAction(callback) {
-  callback();
-}
+// function callAction(callback) {
+//   callback();
+// }
 
-callAction(product.showPrice);
+// callAction(product.showPrice);
 
 //* Прототипи та класи
 //TODO:=========task-01=================
@@ -77,23 +90,23 @@ callAction(product.showPrice);
  * Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
  */
 
-const res = calculator
-  .number(10)
-  .add(10)
-  .divide(2)
-  .multiply(4)
-  .subtract(5)
-  .getResult();
+// const res = calculator
+//   .number(10)
+//   .add(10)
+//   .divide(2)
+//   .multiply(4)
+//   .subtract(5)
+//   .getResult();
 
 // console.log(res);
 
-const res2 = calculator
-  .number(20)
-  .subtract(40)
-  .multiply(-8)
-  .divide(160)
-  .add(20)
-  .getResult();
+// const res2 = calculator
+//   .number(20)
+//   .subtract(40)
+//   .multiply(-8)
+//   .divide(160)
+//   .add(20)
+//   .getResult();
 
 // console.log(res2);
 //! Приватні властивості
