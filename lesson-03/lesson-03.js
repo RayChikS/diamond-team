@@ -1,33 +1,33 @@
 //TODO:=========task-01=================
 // Створити об'єкт, який представляє користувача. У об'єкті повинні бути наступні поля: ім'я, прізвище, вік, email та метод, який виводить повну інформацію про користувача.
 
-const user = {
-  firstName: "Sergiy",
-  lastName: "Gusar",
-  age: 41,
-  email: "qwer@gmail.com",
+// const user = {
+//   firstName: "Nikolay",
+//   lastName: "Mosalov",
+//   age: 39,
+//   email: "qwer@gmail.com",
 
-  info() {
-    return this;
-  },
+//   info() {
+//     return this;
+//   },
 
-  modify(key, value) {
-    if (key !== "firstName" && key !== "lastName") {
-      console.log("error");
-      return;
-    }
-    if (value[0] !== value[0].toUpperCase() || value.length < 3) {
-      console.log("error2");
-      return;
-    }
-    return (this[key] = value);
-  },
-};
+//   modify(key, value) {
+//     if (key !== "firstName" && key !== "lastName") {
+//       console.log("error");
+//       return;
+//     }
+//     if (value[0] !== value[0].toUpperCase() || value.length < 3) {
+//       console.log("error2");
+//       return;
+//     }
+//     return (this[key] = value);
+//   },
+// };
 
 // user.info();
 // console.log(user.info());
 
-const employee = Object.create(user);
+// const employee = Object.create(user);
 // employee.firstName = 'Vlad';
 // employee.info();
 
@@ -42,53 +42,53 @@ const employee = Object.create(user);
 
 //TODO:=========task-03=================
 // Створити глобальну функцію для обьекта "user", що може додавати властивості об'єкту, в контексті якого вона буде викликана. Додати цю функцію як метод об'єкта user, та додати за допомогою неї властивість friends із значенням:
-function addProperty(key, value) {
-  return (this[key] = value);
-}
-user.addProperty = addProperty;
-employee.addProperty = addProperty;
-user.addProperty("friends", [
-  {
-    firstName: "Mary",
-    lastName: "Smith",
-    age: 32,
-    email: "marysmith@hotmail.com",
-  },
-  {
-    firstName: "Alex",
-    lastName: "Johnson",
-    age: 45,
-    email: "alex.johnson@yahoo.com",
-  },
-  {
-    firstName: "Emily",
-    lastName: "Davis",
-    age: 19,
-    email: "emilydavis@gmail.com",
-  },
-]);
+// function addProperty(key, value) {
+//   return (this[key] = value);
+// }
+// user.addProperty = addProperty;
+// employee.addProperty = addProperty;
+// user.addProperty("friends", [
+//   {
+//     firstName: "Mary",
+//     lastName: "Smith",
+//     age: 32,
+//     email: "marysmith@hotmail.com",
+//   },
+//   {
+//     firstName: "Alex",
+//     lastName: "Johnson",
+//     age: 45,
+//     email: "alex.johnson@yahoo.com",
+//   },
+//   {
+//     firstName: "Emily",
+//     lastName: "Davis",
+//     age: 19,
+//     email: "emilydavis@gmail.com",
+//   },
+// ]);
 
 // console.log(user);
 
-employee.addProperty("friends", [
-  {
-    firstName: "Mary",
-    lastName: "Smith",
-    age: 32,
-    email: "marysmith@hotmail.com",
-  },
-]);
+// employee.addProperty("friends", [
+//   {
+//     firstName: "Mary",
+//     lastName: "Smith",
+//     age: 32,
+//     email: "marysmith@hotmail.com",
+//   },
+// ]);
 // console.log(employee);
 
 //TODO:=========task-04=================
 //  Викликати метод user.info() таким чином, щоб він вивів результатом  ({name: 'Bob', lastName: 'Lasso',age: 50, email: 'BodLasso@gmail.com'})
 
-const obj = {
-  name: "Bob",
-  lastName: "Lasso",
-  age: 50,
-  email: "BodLasso@gmail.com",
-};
+// const obj = {
+//   name: "Bob",
+//   lastName: "Lasso",
+//   age: 50,
+//   email: "BodLasso@gmail.com",
+// };
 // console.log(user.info.call(obj));
 
 //TODO:=========task-05=================
