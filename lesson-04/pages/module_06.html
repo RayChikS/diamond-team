@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 06</title>
+    <link rel="stylesheet" href="../css/module_6.css" />
+  </head>
+  <body>
+    <a href="../main.html">Go Back</a>
+    <!-- Task - 04 -->
+    <p class="task-title">Task 4</p>
+    <form class="contact-form js-contact-form">
+      <input
+        name="userName"
+        type="text"
+        class="contact-form-input js-username-input"
+        data-length="8"
+        required
+        placeholder="Your name"
+      />
+      <label class="js-policy-label">
+        <input
+          type="checkbox"
+          name="accept"
+          class="contact-form-checkbox js-policy-checkbox"
+        />
+        Я <span class="js-username-output">Anonymous</span> погоджуюсь із
+        політикою конфіденційності
+      </label>
+      <button type="submit" class="contact-form-btn js-contact-form-submit">
+        Відправити
+      </button>
+    </form>
+
+    <!-- Task - 05 -->
+    <p class="task-title">Task 5</p>
+    <div>
+      <div class="box"></div>
+      <button class="js-decrease" id="decrease">Зменьшити</button>
+      <button class="js-increase" id="increase">Збільшити</button>
+    </div>
+
+    <script type="module" src="../js/module_6.js"></script>
+  </body>
+</html>
