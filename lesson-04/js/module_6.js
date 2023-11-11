@@ -97,7 +97,6 @@ linkEl.after(divCon);
 
 // //TODO:===========3===============
 
-
 // // inputEl.addEventListener("blur", (event) => {
 // //       const input = event.target;
 // //       !input.value.trim()
@@ -105,11 +104,10 @@ linkEl.after(divCon);
 // //         : (input.style.outline = "3px solid lime");
 // //     });
 
-
 // //TODO:===========4===============
 
 // formEl.addEventListener("submit", (event) => {
-  
+
 //     event.preventDefault();
 
 // let formData = new FormData(event.target);
@@ -123,7 +121,7 @@ linkEl.after(divCon);
 
 //         return alert ("Заповніть поля")
 //     }
-    
+
 // console.log({userName:userName});
 
 // // formData = new FormData();
@@ -136,23 +134,48 @@ linkEl.after(divCon);
 
 // const {accept, userName} = event.target.elements;
 
-
 // if ( !userName.value.trim() || !accept.checked ){
 //     return alert ("Заповніть поля")
 // }
 // console.log({userName:userName.value});
 
-// event.target.reset(); 
+// event.target.reset();
 // spanEl.textContent = "Anonymous";
 //  });
-
 
 // inputEl.addEventListener('input', (event) => {
 //  spanEl.textContent = event.target.value.trim() || 'Anonymous' ;
 // })
 
-
-
-
 //TODO:=========task-05=================
-// Кнопка "Зменшити" робить квадрат меншим на 20 пікселів, кнопка "Збільшити" - робить більшим на 10 пікселів.
+// Кнопка "Зменшити" робить квадрат меншим на 20 пікселів, кнопка "Збільшити"
+// - робить більшим на 10 пікселів.
+
+// const boxEl = document.querySelector(".box");
+const btnsEl = document.querySelector(".js-btn-wrapper");
+// btnsEl.addEventListener("click", onClick);
+
+// function onClick(event) {
+//   console.dir(event.currentTarget);
+//   console.log(event.target);
+
+//   if (event.target.nodeName !== "BUTTON") {
+//     return;
+//   }
+//   const boxEl = btnsEl.querySelector(".box");
+//   const { offsetWidth } = boxEl;
+
+//   const id = event.target.id;
+//   if (id === "increase") {
+//     boxEl.style.width = `${offsetWidth + 20}px`;
+//     boxEl.style.height = `${offsetWidth + 20}px`;
+//     return;
+//   }
+//   if (id === "decrease") {
+//     boxEl.style.width = `${offsetWidth - 20}px`;
+//     boxEl.style.height = `${offsetWidth - 20}px`;
+//     return;
+//   }
+// }
+const textEl = document.querySelector(".text");
+console.dir(textEl);
