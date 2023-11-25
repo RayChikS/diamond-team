@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 16</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="light">
+    <!-- Task - 01 -->
+    <section>
+      <div class="container">
+        <p class="task-title">Task 01</p>
+        <h1>Counter</h1>
+        <p>A simple counting web app</p>
+
+        <div class="counter">
+          <div class="counter-value js-counter-value">0</div>
+
+          <div class="counter-controls js-counter-controls">
+            <button data-action="decrease">Decrease</button>
+            <button data-action="reset">Reset</button>
+            <button data-action="increase">Increase</button>
+          </div>
+        </div>
+
+        <div class="save js-save">
+          <button data-action="save">Save</button>
+          <button data-action="clear-save">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task - 02 -->
+    <section>
+      <div class="container">
+        <p class="task-title">Task 02</p>
+        <h2>Switch</h2>
+        <div class="toggle-switch">
+          <p>Dark</p>
+          <span>
+            <label class="switch">
+              <input id="theme-switch" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <p>Light</p>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./js/counter.js"></script>
+    <script type="module" src="./js/theme_dark.js"></script>
+    <script type="module" src="./js/todo_list.js"></script>
+    <script type="module" src="./js/favorite-food.js"></script>
+  </body>
+</html>
